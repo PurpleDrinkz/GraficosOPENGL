@@ -36,8 +36,6 @@ void dibujar()
 int main()
 {
 
-	
-
 	//Declaración de ventana.
 	GLFWwindow * window;
 	//Propiedades de la ventana.
@@ -79,10 +77,8 @@ int main()
 		exit(EXIT_FAILURE);
 	}
 
-
 	const GLubyte *version = glGetString(GL_VERSION);
 	cout << "Version OpenGL: " << version << endl;
-
 
 	red = green = blue = 0.7f;
 
@@ -107,7 +103,6 @@ int main()
 		//Buscar señales de entrada
 		glfwPollEvents();
 
-	
 	}
 
 	glfwDestroyWindow(window);
